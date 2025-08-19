@@ -1,3 +1,4 @@
+//EXPENSE TRACKER CONSOLE BASED KOTLIN APPLICATION
 
 //person class every person's name and id
 //encapsulation -bundled person data in one class
