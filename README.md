@@ -10,7 +10,7 @@ It demonstrates **Object-Oriented Programming (OOPs**) concepts in a real-world 
 
 ## 🔥OOP Concepts Used
 
-1. **Encapsulation**
+1.**Encapsulation**
    
 Example:
 
@@ -57,10 +57,8 @@ splits.forEach { (person, amt) -> println("${person.name} should pay Rs$amt") }
 
 ## 🔥UML Class Diagram
 
-# Expense Sharing System UML
-
-```mermaid
 classDiagram
+
     class Person {
         - id: String
         - name: String
@@ -79,8 +77,9 @@ classDiagram
         + calculateSplit(members: List<Person>): Map<Person, Double>
     }
 
-    Person <.. Expense : payer
+    Person "1" <-- "1" Expense : payer
     ExpenseManager "1" --> "*" Expense : manages
+
 
 
 ## 🔥How the Program Works (Flow)
